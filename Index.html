@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewpoint" content="width=device=width, initial-scale=1.0">
+<link rel="stylesheet" href="Style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<article class="Box">
+    <h1>Rock - Paper - Scissors</h1>
+    <p>type in amount of rounds to play:</p>
+    <input id="rounds-inp" type="number">
+    <button id="start-btn" onclick="confirmRounds()">Start</button>
+    <p>choose your weapon:</p>
+    <section class="buttonSection">
+        <button class="weapon-btn" onclick="chosenWeapon(0)">Rock</button>
+        <button class="weapon-btn" onclick="chosenWeapon(1)">Paper</button>
+        <button class="weapon-btn" onclick="chosenWeapon(2)">Scissors</button>
+    </section>
+    <h2 id="winCount-el">0:0</h2>
+    <h3 id="versus-el"></h3>
+    <h3 id="roundWin-el"></h3>
+    <h2 id="totalWin-el"></h2>
+</article>
+<audio id="audio" src="quack.mp3"></audio>
+<body>
+<script defer src="JavaScript.js"></script>
+</body>
+</html>
